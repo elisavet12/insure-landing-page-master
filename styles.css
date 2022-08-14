@@ -61,10 +61,10 @@ header {
 }
 
 .different {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
+  /* display: grid;
+  grid-template-columns: auto;
   grid-template-rows: 100px 100px 100px;
-  grid-template-areas: "different__title" "process prices first " "different__info";
+  grid-template-areas: "different__title . . " "dif-test dif-test dif-test" "different__info"; */
 }
 
 .different__title {
@@ -84,5 +84,14 @@ header {
 }
 
 .different__info {
-  grid-area: different-info;
+  /* grid-area: different-info; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dif-test {
+  /* grid-area: dif-test;
+  display: flex; */
+  display: flex;
 }
