@@ -20,6 +20,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .burger {
   display: none;
@@ -88,15 +89,27 @@ display: flex; */
 .footer__menu-clm {
 }
 .header {
+  padding-left: 10.5rem;
+  padding-right: 10.5rem;
 }
 .homelink {
 }
 .humanizing {
+  padding-left: 10.5rem;
+  padding-right: 10.5rem;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 70% 30%;
   grid-template-areas: "humanizing--info humanizing--img";
-  background-color: var(--Dark-Violet);
+  /* background-color: var(--Dark-Violet); */
+  /* justify-items: center; */
+  background: linear-gradient(
+    to bottom,
+    var(--Dark-Violet),
+    var(--Dark-Violet) 65%,
+    var(--Very-Light-Gray) 35%
+  );
+  height: 59rem;
 }
 
 .humanizing::before {
@@ -115,7 +128,9 @@ display: flex; */
 
 .humanizing--img {
   grid-area: humanizing--img;
-  height: 125%;
+  transform: translate(10px, 116px);
+  width: 100%;
+  max-width: 552px;
 }
 .humanizing--info {
   grid-area: humanizing--info;
@@ -127,13 +142,21 @@ display: flex; */
 .info-social {
 }
 .info__btn {
+  background-color: var(--Very-Light-Gray) !important;
 }
 .info__excerpt {
+  color: var(--Very-Light-Gray);
+  line-height: 2;
+  margin-bottom: 1.87rem;
+  margin-top: 1.25rem;
 }
 .info__title {
   font-family: "DM Serif Display";
-  font-size: 4.5rem;
+  font-size: 4.37rem;
+  letter-spacing: 0.01em;
   color: var(--Very-Light-Gray);
+  width: 15ch;
+  line-height: 1;
 }
 .instagram {
 }
@@ -150,21 +173,46 @@ display: flex; */
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2.18rem;
 }
 .nav--item {
+  list-style: none;
 }
 .nav--main {
 }
 .nav--main__list {
   display: flex;
+  gap: 1.62rem;
 }
 .nav__btn {
+  width: 9.37rem;
+  height: 2.5rem;
+  background-color: var(--Dark-Violet);
 }
 .nav__link {
+  text-decoration: none;
+  font-size: 0.87rem;
+  color: var(--Grayish-Blue);
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav__link:hover {
+  color: var(--Dark-Violet);
 }
 .nav__link-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--Very-Light-Gray);
+  border: none;
 }
+
+.nav__link-btn-hum {
+  color: var(--Dark-Violet);
+}
+
 .pinterest {
 }
 .prices {
